@@ -1,3 +1,5 @@
+'use client';
+
 import SigninLayout from '@/component/template/SigninLayout';
 import SigninForm from '@/component/organism/SigninFrom';
 
