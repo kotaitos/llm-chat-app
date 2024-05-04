@@ -1,14 +1,11 @@
 'use client';
 
-import { Button } from '@nextui-org/react';
-import NewChatIcon from '@/component/atom/icon/NewChatIcon';
+import NewChatButton from '@/component/molecule/NewChatButton';
 
 export default function NavigationBar() {
   return (
-    <div className='flex-1 p-4'>
-      <Button className='w-full' endContent={<NewChatIcon />}>
-        New Chat
-      </Button>
-    </div>
+    <nav className='flex flex-col w-full h-full'>
+      <NewChatButton />
+    </nav>
   );
 }
