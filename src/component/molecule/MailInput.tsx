@@ -1,5 +1,16 @@
 import { Input } from '@nextui-org/react';
 
-export default function MailInput() {
-  return <Input type='email' label='Email' placeholder='Enter your email' />;
+interface MailInputProps {
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+export default function MailInput({ onChange }: MailInputProps) {
+  return (
+    <Input
+      type='email'
+      label='Email'
+      placeholder='Enter your email'
+      onChange={onChange}
+    />
+  );
 }

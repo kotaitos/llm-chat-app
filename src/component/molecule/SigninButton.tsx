@@ -1,5 +1,13 @@
 import { Button } from '@nextui-org/react';
 
-export default function NewChatButton() {
-  return <Button color='success'>Sign In</Button>;
+interface SigninButtonProps {
+  onClick: () => void;
+}
+
+export default function NewChatButton({ onClick }: SigninButtonProps) {
+  return (
+    <Button color='success' onClick={onClick}>
+      Sign In
+    </Button>
+  );
 }
