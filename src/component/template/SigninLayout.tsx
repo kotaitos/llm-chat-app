@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const SigninLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className='flex h-screen justify-center items-center dark bg-default'>
+    <div className='flex h-screen justify-center items-center dark bg-secondary'>
       {children}
     </div>
   );

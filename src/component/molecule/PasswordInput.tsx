@@ -15,8 +15,8 @@ export default function MailInput({ onChange }: PasswordInputProps) {
   return (
     <Input
       label='Password'
-      variant='bordered'
       placeholder='Enter your password'
+      variant='underlined'
       onChange={onChange}
       endContent={
         <button

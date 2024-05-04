@@ -41,7 +41,7 @@ const config: Config = {
         },
         dark: {
           colors: {
-            default: 'black',
+            default: 'white',
             primary: '#18181B',
             secondary: '#27272A',
             success: '#059669',

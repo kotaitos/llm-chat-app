@@ -1,7 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/react';
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Spacer,
+} from '@nextui-org/react';
 import MailInput from '@/component/molecule/MailInput';
 import PasswordInput from '@/component/molecule/PasswordInput';
 import SigninButton from '@/component/molecule/SigninButton';
@@ -20,10 +26,11 @@ export default function SigninFrom() {
   };
 
   return (
-    <Card className='w-80'>
+    <Card style={{ width: '400px', height: '300px' }}>
       <CardHeader>Sign In</CardHeader>
-      <CardBody>
+      <CardBody className='flex flex-col justify-center items-center'>
         <MailInput onChange={handleEmailChange} />
+        <Spacer y={4} />
         <PasswordInput onChange={handlePasswordChange} />
       </CardBody>
       <CardFooter>

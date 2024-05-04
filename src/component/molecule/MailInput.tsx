@@ -10,7 +10,9 @@ export default function MailInput({ onChange }: MailInputProps) {
       type='email'
       label='Email'
       placeholder='Enter your email'
+      variant='underlined'
       onChange={onChange}
+      className='max-w-xs'
     />
   );
 }
