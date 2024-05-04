@@ -31,7 +31,7 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            default: '#ffffff',
+            default: 'white',
             primary: '#EFAA52',
             secondary: '#E7CC8F',
             success: '#008000',
@@ -41,10 +41,10 @@ const config: Config = {
         },
         dark: {
           colors: {
-            default: '#18181B',
+            default: 'white',
             primary: '#18181B',
             secondary: '#27272A',
-            success: '#17C964',
+            success: '#059669',
             warning: '#F5A524',
             danger: '#F31260',
           },

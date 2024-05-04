@@ -8,11 +8,11 @@ interface LayoutProps {
 
 const ChatLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className='flex min-h-screen'>
-      <header className='dark bg-primary w-1/6'>
+    <div className='flex h-screen w-screen'>
+      <div className='dark bg-primary p-4' style={{ width: '240px' }}>
         <NavigationBar />
-      </header>
-      {children}
+      </div>
+      <div className='flex-1 dark bg-secondary p-4'>{children}</div>
     </div>
   );
 };
