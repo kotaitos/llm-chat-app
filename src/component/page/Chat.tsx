@@ -8,7 +8,7 @@ interface ChatPageProps {
 export default function ChatPage({ id }: ChatPageProps) {
   return (
     <ChatLayout>
-      <main className='dark bg-secondary flex-1 p-4'>
+      <main>
         <SelectApplicationMenu />
         Chat ID: {id}
       </main>
